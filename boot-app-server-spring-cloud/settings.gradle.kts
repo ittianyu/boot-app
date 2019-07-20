@@ -5,4 +5,4 @@ pluginManagement {
 }
 rootProject.name = "boot-app-server-spring-cloud"
 
-include("discover", "gateway", "account", "dashboard")
+include("common", "discover", "config", "gateway", "account", "account-api", "dashboard", "dashboard-api")

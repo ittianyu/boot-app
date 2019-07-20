@@ -1,0 +1,96 @@
+{
+  "SQL": {
+    "i18n": "${key}",
+    "required": true,
+    "type": {
+      "Mysql": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "url": "jdbc:mysql://localhost:3306/boot_app?useUnicode=true&characterEncoding=UTF-8",
+          "driver-class-name": "com.mysql.jdbc.Driver",
+          "username": "root",
+          "password": "root"
+        }
+      }
+    },
+    "config": {
+      "type": "Mysql",
+      "default": true,
+      "param": {
+        "Mysql": null
+      }
+    }
+  },
+  "NoSQL": {
+    "i18n": "${key}",
+    "type": {
+      "Redis": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "host": "localhost",
+          "password": "",
+          "port": 6379,
+          "timeout": 2000,
+          "pool.max-idle": 500,
+          "pool.min-idle": 10,
+          "pool.max-wait": 10000
+        }
+      }
+    },
+    "config": {
+      "type": "Redis",
+      "default": true,
+      "param": {
+        "Redis": null
+      }
+    }
+  },
+  "Message": {
+    "i18n": "${key}",
+    "type": {
+      "RabbitMQ": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "host": "localhost",
+          "username": "guest",
+          "password": "guest",
+          "port": 5672
+        }
+      }
+    },
+    "config": {
+      "type": "RabbitMQ",
+      "default": true,
+      "param": {
+        "RabbitMQ": null
+      }
+    }
+  },
+  "Email": {
+    "i18n": "${key}",
+    "single": true,
+    "type": {
+      "Email": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "host": "",
+          "port": 465,
+          "username": "",
+          "password": "",
+          "encoding": "UTF-8"
+        }
+      }
+    },
+    "config": {
+      "type": "Email",
+      "default": true,
+      "param": {
+        "Email": null
+      }
+    }
+  }
+}

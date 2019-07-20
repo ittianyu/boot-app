@@ -22,7 +22,7 @@ object Plugins {
 
 object Libs {
     const val `spring-cloud-dependencies` = "org.springframework.cloud:spring-cloud-dependencies:${Versions.springCloud}"
-    const val `kotlin-stdlib-jdk8` = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    const val `kotlin-stdlib` = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     const val `kotlin-reflect` = "org.jetbrains.kotlin:kotlin-reflect"
     const val `jackson-module-kotlin` = "com.fasterxml.jackson.module:jackson-module-kotlin"
     const val `mysql-connector-java` = "mysql:mysql-connector-java"
@@ -40,5 +40,12 @@ object Libs {
     const val `spring-cloud-starter-netflix-zuul` = "org.springframework.cloud:spring-cloud-starter-netflix-zuul"
     const val `spring-cloud-starter-oauth2` = "org.springframework.cloud:spring-cloud-starter-oauth2"
     const val `spring-cloud-starter-openfeign` = "org.springframework.cloud:spring-cloud-starter-openfeign"
+    const val `spring-cloud-config-server` = "org.springframework.cloud:spring-cloud-config-server"
+    const val `spring-cloud-config-client` = "org.springframework.cloud:spring-cloud-config-client"
 
+}
+
+object Modules {
+    const val common = ":common"
+    const val account_api = ":account-api"
 }

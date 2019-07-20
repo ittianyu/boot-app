@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: dashboard
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      profile: dev
+      name: common,dashboard
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+server:
+  port: 8300

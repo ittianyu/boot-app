@@ -1,0 +1,153 @@
+{
+  "EncryptionAlgorithm": {
+    "i18n": "${key}",
+    "type": {
+      "No": {
+        "clazz": "com.ittianyu.account.encryption.EmptyEncryptor",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "MD5": {
+        "clazz": "com.ittianyu.account.encryption.MD5Encryptor",
+        "i18n": "${key}",
+        "param": {
+          "salt": "boot_app",
+          "count": 3
+        }
+      },
+      "SHA256": {
+        "clazz": "com.ittianyu.account.encryption.SHA256Encryptor",
+        "i18n": "${key}",
+        "param": {
+          "salt": "boot_app",
+          "count": 3
+        }
+      }
+    },
+    "config": {
+      "type": "SHA256",
+      "default": true,
+      "param": {
+        "SHA256": null
+      }
+    }
+  },
+  "SignUpVerify": {
+    "i18n": "${key}",
+    "type": {
+      "No": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "Email": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "host": "",
+          "port": 465,
+          "username": "",
+          "password": "",
+          "encoding": "UTF-8"
+        }
+      },
+      "Phone": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "Captcha": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "length": 4,
+          "range": "a-z,A-Z,0-9"
+        }
+      },
+      "Code": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": null,
+        "action": {
+          "edit": {
+            "i18n": "${key}",
+            "path": "/dashboard/code/edit"
+          }
+        }
+      }
+    },
+    "config": {
+      "type": "Captcha",
+      "default": true,
+      "param": {
+        "Captcha": null
+      }
+    }
+  },
+  "SignInVerify": {
+    "i18n": "${key}",
+    "type": {
+      "No": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "Captcha": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "length": 4,
+          "range": "a-z,A-Z,0-9"
+        }
+      }
+    },
+    "config": {
+      "type": "Captcha",
+      "default": true,
+      "param": {
+        "Captcha": null
+      }
+    }
+  },
+  "TokenGenerator": {
+    "i18n": "${key}",
+    "type": {
+      "DefaultTokenServices": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "accessTokenValiditySeconds": 604800,
+          "refreshTokenValiditySeconds": 2592000,
+          "supportRefreshToken": true
+        }
+      },
+      "config": {
+        "type": "DefaultTokenServices",
+        "default": true,
+        "param": {
+          "DefaultTokenServices": null
+        }
+      }
+    }
+  },
+  "TokenStorage": {
+    "i18n": "${key}",
+    "type": {
+      "NoSQL": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "SQL": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      }
+    },
+    "config": {
+      "type": "TokenStorage.SQL",
+      "default": true,
+      "param": {}
+    }
+  }
+}

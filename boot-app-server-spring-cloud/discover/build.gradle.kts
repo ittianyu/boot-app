@@ -2,7 +2,7 @@
 dependencies {
     // runtime
     implementation(Libs.`kotlin-reflect`)
-    implementation(Libs.`kotlin-stdlib-jdk8`)
+    implementation(Libs.`kotlin-stdlib`)
     implementation(Libs.`jackson-module-kotlin`)
 
     // boot start

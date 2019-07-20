@@ -1,0 +1,42 @@
+{
+  "AuthPath": {
+    "i18n": "${key}",
+    "single": true,
+    "type": {
+      "AuthPath": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {
+          "authorizeList": [],
+          "anonymousList": ["/account/signIn", "/account/signUp"],
+          "defaultAuthorize": true
+        }
+      }
+    },
+    "config": {
+      "type": "AuthPath",
+      "default": true,
+      "param": {}
+    }
+  },
+  "CORS": {
+    "i18n": "${key}",
+    "type": {
+      "Header": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      },
+      "JSONP": {
+        "clazz": "",
+        "i18n": "${key}",
+        "param": {}
+      }
+    },
+    "config": {
+      "type": "Header",
+      "default": true,
+      "param": {}
+    }
+  }
+}

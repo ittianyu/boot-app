@@ -33,10 +33,13 @@ gradle + kotlin script
 
 - common: 公用模块，放常用的与业务无关的类
 - discover: 注册和发现服务
+- config: 配置服务中心
 - gateway: 网关，用于登录态校验和跨域支持
 - account: 账号服务，提供注册、登录、登录态校验功能
 - account-api: 对其他服务公开的接口和实体类
 - dashboard: 后台服务，提供配置和用户管理功能
+- dashboard-api: 对其他服务公开的接口和实体类
+
 
 #### 实体类分类 ####
 
@@ -62,6 +65,17 @@ gradle + kotlin script
 同一类功能放到一个包下，功能内尽量不依赖非公用外部类。
 公用类尽量少且独立。
 
+
+#### 配置管理 ####
+
+独立配置模块: discover, config
+配置中心管理模块: account, dashboard, gateway
+
+业务模块的配置均放在 config 模块下的 resources/config
+其中 common-dev 是公用配置。
+
+-dev 表示开发配置，如果需要线上配置，可以自行复制并做修改。
+这里配置中心使用的是 spring-cloud-config，相关配置和使用方法可以查阅网上资料。
 
 ## 测试 ##
 
@@ -89,3 +103,10 @@ gradle + kotlin script
 - account: 8200
 - dashboard: 8300
 
+注意事项：机器对外只暴露 80 端口，有 https 需求的自行改成 443。
+
+#### 网关 ####
+
+- 统一前缀: /api
+- 禁止外部访问的服务: discover,gateway,config
+- 禁止外部访问的部分接口: /dashboard/config/xxx

@@ -1,4 +1,7 @@
 zuul:
   sensitive-headers:
-  ignored-services: discover,gateway,config
   prefix: /api
+  ignored-services: discover,gateway,config
+  ignored-patterns:
+    - /dashboard/config/**
+  

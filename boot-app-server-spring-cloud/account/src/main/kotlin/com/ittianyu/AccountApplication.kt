@@ -1,4 +1,4 @@
-package com.ittianyu.account
+package com.ittianyu
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

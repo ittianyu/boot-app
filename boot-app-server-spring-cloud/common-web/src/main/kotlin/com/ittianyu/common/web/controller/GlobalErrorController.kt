@@ -1,4 +1,4 @@
-package com.ittianyu.gateway.controller
+package com.ittianyu.common.web.controller
 
 import com.ittianyu.common.bo.ResultEnum
 import com.ittianyu.common.dto.ResultDTO

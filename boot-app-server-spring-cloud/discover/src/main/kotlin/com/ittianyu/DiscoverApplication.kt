@@ -1,4 +1,4 @@
-package com.ittianyu.discover
+package com.ittianyu
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

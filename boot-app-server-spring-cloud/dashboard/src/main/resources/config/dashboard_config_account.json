@@ -67,11 +67,12 @@
       "Code": {
         "clazz": "",
         "i18n": "${key}",
-        "param": null,
-        "action": {
-          "edit": {
-            "i18n": "${key}",
-            "path": "/dashboard/code/edit"
+        "param": {
+          "action": {
+            "edit": {
+              "i18n": "${key}",
+              "path": "/dashboard/code/edit"
+            }
           }
         }
       }
@@ -120,13 +121,13 @@
           "refreshTokenValiditySeconds": 2592000,
           "supportRefreshToken": true
         }
-      },
-      "config": {
-        "type": "DefaultTokenServices",
-        "default": true,
-        "param": {
-          "DefaultTokenServices": null
-        }
+      }
+    },
+    "config": {
+      "type": "DefaultTokenServices",
+      "default": true,
+      "param": {
+        "DefaultTokenServices": null
       }
     }
   },

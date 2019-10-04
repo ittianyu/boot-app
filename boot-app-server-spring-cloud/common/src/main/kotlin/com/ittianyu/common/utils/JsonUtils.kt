@@ -61,4 +61,22 @@ object JsonUtils {
         return null
     }
 
+    /**
+     * json to Map<String, pojo>
+     *
+     * @param json
+     * @param beanType
+     * @return
+     */
+    fun <T> fromJsonToMap(json: String?, beanType: Class<T>): Map<String, T>? {
+        json ?: return null
+        val javaType = MAPPER.typeFactory.constructParametricType(Map::class.java, String::class.java, beanType)
+        try {
+            return MAPPER.readValue<Map<String, T>>(json, javaType)
+        } catch (e: Exception) {
+            log.error("fromJsonToMap", e)
+        }
+        return null
+    }
+
 }

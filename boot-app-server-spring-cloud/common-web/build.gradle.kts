@@ -9,10 +9,9 @@ dependencies {
     implementation(Libs.`spring-boot-starter`)
     testImplementation(Libs.`spring-boot-starter-test`)
 
-    // call
-    implementation(Libs.`spring-cloud-starter-openfeign`)
+    // web
+    implementation(Libs.`spring-boot-starter-web`)
 
-    // module
+    // modules
     implementation(project(Modules.common))
 }
-

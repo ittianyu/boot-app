@@ -24,4 +24,6 @@ dependencies {
     // hystrix-dashboard
     implementation(Libs.`spring-cloud-starter-netflix-hystrix-dashboard`)
 
+    implementation(project(Modules.common))
+    implementation(project(Modules.common_web))
 }

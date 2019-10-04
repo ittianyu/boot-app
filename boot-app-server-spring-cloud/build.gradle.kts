@@ -34,7 +34,7 @@ allprojects {
     apply(plugin = Plugins.pluginSpring)
     apply(plugin = Plugins.pluginJpa)
     // custom plugin
-    apply(plugin = Plugins.commonConfig)
+//    apply(plugin = Plugins.commonConfig)
 
     // must behind the "apply plugin springDependencyManagement"
     dependencyManagement {

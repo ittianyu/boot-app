@@ -3,5 +3,5 @@ zuul:
   prefix: /api
   ignored-services: discover,gateway,config
   ignored-patterns:
-    - /dashboard/config/**
+#    - /dashboard/config/**
   

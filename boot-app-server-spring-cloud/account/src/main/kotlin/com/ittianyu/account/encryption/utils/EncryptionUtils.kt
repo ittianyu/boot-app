@@ -138,7 +138,7 @@ object EncryptionUtils {
      */
     private fun bytes2Hex(bytes: ByteArray): String {
         val stringBuilder = StringBuilder()
-        var temp: String? = null
+        var temp: String?
         for (i in bytes.indices) {
             temp = Integer.toHexString(bytes[i].toInt() and 0xFF)
             if (temp!!.length == 1) {

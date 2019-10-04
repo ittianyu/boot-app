@@ -12,7 +12,7 @@ private fun kotlin(module: String): String {
 }
 
 object Plugins {
-    const val commonConfig = "common-config";// custom plugin build by "buildSrc"
+//    const val commonConfig = "common-config";// custom plugin build by "buildSrc"
     const val springBoot = "org.springframework.boot";
     const val springDependencyManagement = "io.spring.dependency-management";
     val jvm = kotlin("jvm");
@@ -47,5 +47,7 @@ object Libs {
 
 object Modules {
     const val common = ":common"
+    const val common_web = ":common-web"
     const val account_api = ":account-api"
+    const val dashboard_api = ":dashboard-api"
 }

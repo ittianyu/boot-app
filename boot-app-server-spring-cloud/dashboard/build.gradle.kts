@@ -12,6 +12,10 @@ dependencies {
     // web
     implementation(Libs.`spring-boot-starter-web`)
 
+    // data
+    implementation(Libs.`spring-boot-starter-data-jpa`)
+    implementation(Libs.`mysql-connector-java`)
+
     // cloud start
     implementation(Libs.`spring-cloud-starter`)
     // discover client
@@ -24,4 +28,8 @@ dependencies {
     implementation(Libs.`spring-cloud-starter-openfeign`)
     implementation(Libs.`spring-cloud-starter-netflix-hystrix`)
 
+    // module
+    implementation(project(Modules.common))
+    implementation(project(Modules.common_web))
+    implementation(project(Modules.dashboard_api))
 }

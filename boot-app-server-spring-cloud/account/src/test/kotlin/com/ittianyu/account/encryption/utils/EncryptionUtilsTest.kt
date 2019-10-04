@@ -12,8 +12,8 @@ class EncryptionUtilsTest {
 
     @Test
     fun MD5() {
-        var actual: String? = null
-        var expected: String? = null
+        var actual: String?
+        var expected: String?
         // MD5 hello
         actual = EncryptionUtils.MD5("hello")
         expected = "5d41402abc4b2a76b9719d911017c592"
@@ -27,8 +27,8 @@ class EncryptionUtilsTest {
 
     @Test
     fun MD5N() {
-        var actual: String? = null
-        var expected: String? = null
+        var actual: String?
+        var expected: String?
         // MD5N("hello", count=3)
         actual = EncryptionUtils.MD5N("hello", count=3)
         expected = "0dcd649d4ef5f787e39ddf48d8e625a5"
@@ -64,8 +64,8 @@ class EncryptionUtilsTest {
 
     @Test
     fun SHA256() {
-        var actual: String? = null
-        var expected: String? = null
+        var actual: String?
+        var expected: String?
         // SHA256 hello
         actual = EncryptionUtils.SHA256("hello")
         expected = "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
@@ -79,8 +79,8 @@ class EncryptionUtilsTest {
 
     @Test
     fun SHA256N() {
-        var actual: String? = null
-        var expected: String? = null
+        var actual: String?
+        var expected: String?
         // SHA256N("hello", count=3)
         actual = EncryptionUtils.SHA256N("hello", count=3)
         expected = "ecd26292b7f02970ca6909abb23e1aedd0dd57d0ee9ff40bf3f30c325e3e453a"

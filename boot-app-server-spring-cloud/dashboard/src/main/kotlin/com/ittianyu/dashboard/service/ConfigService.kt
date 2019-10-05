@@ -1,7 +1,5 @@
 package com.ittianyu.dashboard.service
 
-import org.springframework.transaction.annotation.Transactional
-
 interface ConfigService {
 
     fun set(key: String, value: String)

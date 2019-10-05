@@ -42,6 +42,7 @@ object Libs {
     const val `spring-cloud-starter-openfeign` = "org.springframework.cloud:spring-cloud-starter-openfeign"
     const val `spring-cloud-config-server` = "org.springframework.cloud:spring-cloud-config-server"
     const val `spring-cloud-config-client` = "org.springframework.cloud:spring-cloud-config-client"
+    const val `validation-api` = "javax.validation:validation-api:2.0.1.Final"
 
 }
 

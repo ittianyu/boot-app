@@ -9,5 +9,5 @@ dependencies {
     implementation(Libs.`spring-boot-starter`)
     testImplementation(Libs.`spring-boot-starter-test`)
 
+    implementation(Libs.`validation-api`)
 }
-

@@ -36,3 +36,11 @@ CREATE TABLE auth_code (
 )
  ENGINE = InnoDB
  DEFAULT CHARSET utf8;
+
+
+CREATE TABLE config (
+ key_ VARCHAR(64) PRIMARY KEY,
+ value_ TEXT NOT NULL
+)
+ ENGINE = InnoDB
+ DEFAULT CHARSET utf8;

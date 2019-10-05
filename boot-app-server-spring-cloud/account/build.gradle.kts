@@ -2,6 +2,7 @@
 dependencies {
     // module
     implementation(project(Modules.common))
+    implementation(project(Modules.common_web))
     implementation(project(Modules.account_api))
 
     // runtime

@@ -1,4 +1,4 @@
-package com.ittianyu.account.encryption
+package com.ittianyu.account.encryption.impl
 
 import com.ittianyu.account.encryption.utils.EncryptionUtils
 import com.ittianyu.accountapi.dto.EncryptionAlgorithmConfigDTO

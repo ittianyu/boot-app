@@ -1,5 +1,6 @@
-package com.ittianyu.account.encryption
+package com.ittianyu.account.encryption.impl
 
+import com.ittianyu.account.encryption.Encryptor
 import com.ittianyu.accountapi.dto.EncryptionAlgorithmConfigDTO
 import com.ittianyu.common.utils.JsonUtils
 

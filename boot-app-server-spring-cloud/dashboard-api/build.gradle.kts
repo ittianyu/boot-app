@@ -14,5 +14,6 @@ dependencies {
 
     // module
     implementation(project(Modules.common))
+    implementation(project(Modules.common_web))
 }
 

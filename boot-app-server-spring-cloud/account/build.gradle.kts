@@ -4,6 +4,7 @@ dependencies {
     implementation(project(Modules.common))
     implementation(project(Modules.common_web))
     implementation(project(Modules.account_api))
+    implementation(project(Modules.dashboard_api))
 
     // runtime
     implementation(Libs.`kotlin-reflect`)
@@ -33,6 +34,9 @@ dependencies {
     // call
     implementation(Libs.`spring-cloud-starter-openfeign`)
     implementation(Libs.`spring-cloud-starter-netflix-hystrix`)
+    // email
+    implementation(Libs.`spring-boot-starter-mail`)
+
     // auth
 //    implementation(Libs.`spring-cloud-starter-oauth2`)
 }

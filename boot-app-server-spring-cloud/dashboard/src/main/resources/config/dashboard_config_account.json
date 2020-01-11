@@ -44,6 +44,8 @@
         "clazz": "",
         "i18n": "${key}",
         "param": {
+          "title": "verify.title",
+          "content": "verify.content",
           "host": "",
           "port": 465,
           "username": "",
@@ -54,7 +56,10 @@
       "Phone": {
         "clazz": "",
         "i18n": "${key}",
-        "param": {}
+        "param": {
+          "title": "verify.title",
+          "content": "verify.content"
+        }
       },
       "Captcha": {
         "clazz": "",
